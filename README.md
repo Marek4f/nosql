@@ -9,4 +9,4 @@ db.reddit.count()
 #zliczenie wszystkich autorów zaczynajacych sie na litere m
 komenda: db.reddit.find({author: /^m/}).count()
 1700219
-#czas 14.5min
+czas 14.5min
