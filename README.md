@@ -18,3 +18,5 @@ czas 14.5min
 db.reddit.find({controversality:1}, {_id:0, subreddit:1}).limit(5)
 
 czas 7.3 min
+
+13.65min
