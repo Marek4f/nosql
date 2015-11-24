@@ -1,6 +1,11 @@
 # nosql
 
+Na pocztek zainstalowalem mongo. Pobralem program bunzip2 i baze reddit.
+Uruchomilem mongod poleceniem: mongod --storageEngine wiredTiger --dbpath f:\mongo\bin\tygrys
+Nasstepnie zaimportowalem baze poleceniem: bunzip2 -c RC_2015-03.bz2 | mongoimport --drop --host 127.0.0.1 -d baza -c reddit
 czas importu 53:43:2
+Na koniec uruchomilem mongo: mongo baza
+
 
 #zliczenie rekordow
 db.reddit.count()
