@@ -12,6 +12,7 @@ db.reddit.count()
 54564441
 
 #zliczenie wszystkich autorów zaczynajacych sie na litere m
+
 komenda: db.reddit.find({author: /^m/}).count()
 
 1700219
@@ -24,5 +25,9 @@ db.reddit.find({controversality:1}, {_id:0, subreddit:1}).limit(5)
 ![GitHub Logo](1.png)
 czas 7.3 min
 
+#najlepiej oceniany temat
 
-13.65min
+db.reddit.find({},{_id:0, subreddit:1}).sort({"score":-1})limit(1)
+![GitHub Logo](2.png)
+
+czas 17.8min
