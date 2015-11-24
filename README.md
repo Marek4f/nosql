@@ -21,7 +21,7 @@ czas 14.5min
 #piec pierwszych kontrowersyjnych tematow
 
 db.reddit.find({controversality:1}, {_id:0, subreddit:1}).limit(5)
-
+![GitHub Logo](1.png)
 czas 7.3 min
 
 13.65min
