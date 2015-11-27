@@ -80,5 +80,12 @@ komenda: SELECT data->>'subreddit' as subreddit FROM import.rc_2015_03 WHERE dat
 
 ![GitHub Logo](6.png)
 
-czas: 2ms
+czas: 9.7min
 
+#wartosc najlepiej ocenianego tematu
+
+komenda: SELECT MAX(data->>'score') FROM import.rc_2015_03;
+
+czas 12.1 min
+
+Postgres jest wolniejszy od Mongo, ale absorbuje mniej ram i procesora.
