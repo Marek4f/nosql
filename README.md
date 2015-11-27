@@ -47,3 +47,7 @@ db.reddit.find({},{_id:0, subreddit:1}).sort({"score":-1})limit(1)
 czas 17.8min
 
 Procesor nie ma dużego wplywu na czas operacji. Obciazenie procesora nie przekraczalo 30%, jednak pamiec ram i dysk byly wykorzystywane w 100%.
+
+#postgres
+
+Zainstalowalem
