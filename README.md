@@ -73,3 +73,7 @@ komenda: SELECT count(*) FROM import.rc_2015_03 WHERE data->>'author' like ('m%'
 1700219
 
 czas: 28.3min
+
+#piec pierwszych kontrowersyjnych tematow
+
+komenda: SELECT data->>'subreddit' as subreddit FROM import.rc_2015_03 WHERE data->>'controversiality' = '1' limit 5;
