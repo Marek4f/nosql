@@ -77,3 +77,8 @@ czas: 28.3min
 #piec pierwszych kontrowersyjnych tematow
 
 komenda: SELECT data->>'subreddit' as subreddit FROM import.rc_2015_03 WHERE data->>'controversiality' = '1' limit 5;
+
+![GitHub Logo](6.png)
+
+czas: 2ms
+
