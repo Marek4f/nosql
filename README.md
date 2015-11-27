@@ -9,6 +9,8 @@ RAM: 16GB
 
 Dysk: wd10jpvx-75 scsi, Cache: 8mb, Rotation Speed: 5400 RPM, Model: Blue
 
+#Mongo
+
 Na pocztek zainstalowalem mongo. Pobralem program bunzip2 i baze reddit.
 Uruchomilem mongod poleceniem: mongod --storageEngine wiredTiger --dbpath f:\mongo\bin\tygrys
 Nasstepnie zaimportowalem baze poleceniem: bunzip2 -c RC_2015-03.bz2 | mongoimport --drop --host 127.0.0.1 -d baza -c reddit
@@ -48,6 +50,26 @@ czas 17.8min
 
 Procesor nie ma dużego wplywu na czas operacji. Obciazenie procesora nie przekraczalo 30%, jednak pamiec ram i dysk byly wykorzystywane w 100%.
 
-#postgres
+#Postgres
 
-Zainstalowalem
+Zainstalowalem Postgres. Rozpakowalem baze za pomoca bunzip2. Pobralem program pgfutter i dzieki niemu zaimportowalem jsona do sql nastepujaca komenda
+
+pgfutter --db postgres --user postgres --pw marek json RC_2015_03
+
+czas importu 1h 44min
+
+#zliczenie rekordow
+
+komenda: select count(*) from import.rc_2015_03;
+
+54564441
+
+czas 21 min
+
+#zliczenie wszystkich autorów zaczynajacych sie na litere m
+
+komenda: SELECT count(*) FROM import.rc_2015_03 WHERE data->>'author' like ('m%');
+
+1700219
+
+czas: 28.3min
