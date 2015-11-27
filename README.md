@@ -48,6 +48,10 @@ db.reddit.find({},{_id:0, subreddit:1}).sort({"score":-1})limit(1)
 
 czas 17.8min
 
+#Zachowanie podzespolow
+![GitHub Logo](8m.png)![GitHub Logo](9m.png)
+![GitHub Logo](10m.png)
+
 Procesor nie ma dużego wplywu na czas operacji. Obciazenie procesora nie przekraczalo 30%, jednak pamiec ram i dysk byly wykorzystywane w 100%.
 
 #Postgres
@@ -87,5 +91,9 @@ czas: 9.7min
 komenda: SELECT MAX(data->>'score') FROM import.rc_2015_03;
 
 czas 12.1 min
+
+#Zachowanie podzespolow
+![GitHub Logo](3.png)![GitHub Logo](4.png)
+![GitHub Logo](5.png)
 
 Postgres jest wolniejszy od Mongo, ale absorbuje mniej ram i procesora.
