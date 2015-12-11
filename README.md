@@ -115,6 +115,6 @@ db.p.ensureIndex({"loc": "2dsphere"})
 
 Wyszukalem 3 najblizsze miejscowosci od Tczewa.
 
-[GitHub Logo](m1.png)
+![GitHub Logo](m1.png)
 
 [mapa](https://github.com/Marek4f/nosql/blob/master/1.geojson)
