@@ -97,3 +97,24 @@ czas 12.1 min
 ![GitHub Logo](5.png)
 
 Postgres jest wolniejszy od Mongo, ale absorbuje mniej ram i procesora.
+
+# GeoJson
+
+Zaimmportowaem jsona, który zawieral  miasta Polski poleceniem ####mongoimport -d p -c p < pl.json .
+
+
+Dodalem GeoIndex:
+
+db.p.ensureIndex({"loc": "2dsphere"})
+{
+  "createdCollectionAutomatically": false,
+  "numIndexesBefore": 1,
+  "numIndexesAfter": 2,
+  "ok": 1
+}
+
+Wyszukalem 3 najblizsze miejscowosci od Tczewa.
+
+[GitHub Logo](m1.png)
+
+[mapa](https://github.com/Marek4f/nosql/blob/master/1.geojson)
