@@ -84,7 +84,7 @@ komenda: SELECT MAX(data->>'score') FROM import.rc_2015_03;
 |       7.3 min  |    9.7min         |      piec pierwszych kontrowersyjnych tematow      |
 |    10.8min         |      12.1      |  wartosc najlepiej ocenianego tematu      |
 
-#Zachowanie podzespolow
+Zachowanie podzespolow
 
 # mongo
 ![GitHub Logo](8m.png)![GitHub Logo](pr2.png)
@@ -94,6 +94,7 @@ komenda: SELECT MAX(data->>'score') FROM import.rc_2015_03;
 ![GitHub Logo](pr1.png)![GitHub Logo](4.png)
 ![GitHub Logo](5.png)
 
+Mongo jest szybsze od postgres, jednak na Windows podczas dluzszego wyszukiwania zabiera 100% ramu. Z Postgres tego problemu nie ma. Udzial procesora nie gra duzej roli. Podstawa to dysk i w przypadku Mongo pamiec RAM. Przy pierwszych podejsciach przeszkadza w Mongo nieintuicyjna konstrukcja polecen, jednak po czasie okazuja sie byc prostsze od postgres. Mongo lepiej radzi sobie z duzymi bazami danych. Jest szybsze.
 
 # GeoJson
 
