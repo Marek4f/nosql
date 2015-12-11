@@ -33,24 +33,23 @@ komenda: db.reddit.find({author: /^m/}).count()
 
 1700219
 
-czas 14.5min
-
 #piec pierwszych kontrowersyjnych tematow
 
 db.reddit.find({controversality:1}, {_id:0, subreddit:1}).limit(5)
 ![GitHub Logo](1.png)
-czas 7.3 min
 
 #najlepiej oceniany temat
 
 db.reddit.find({},{_id:0, subreddit:1}).sort({"score":-1})limit(1)
 ![GitHub Logo](2.png)
 
-czas 17.8min
 
-| mongo | postgres|
-|-------|---------|
-|yyy    | fffffff| tttttt|
+| mongo | postgres| zadanie|
+|-------|---------|-------|
+| natychmiast    |  21 min | zliczenie rekordow|
+|    14.5min   |  28.3min  |  zliczenie wszystkich autorów zaczynajacych sie na litere m      |
+|       7.3 min  |    9.7min         |      piec pierwszych kontrowersyjnych tematow      |
+|    10.8min         |      12.1      |  wartosc najlepiej ocenianego tematu      |
 
 #Zachowanie podzespolow
 
@@ -78,15 +77,11 @@ komenda: select count(*) from import.rc_2015_03;
 
 54564441
 
-czas 21 min
-
 #zliczenie wszystkich autorów zaczynajacych sie na litere m
 
 komenda: SELECT count(*) FROM import.rc_2015_03 WHERE data->>'author' like ('m%');
 
 1700219
-
-czas: 28.3min
 
 #piec pierwszych kontrowersyjnych tematow
 
@@ -94,13 +89,9 @@ komenda: SELECT data->>'subreddit' as subreddit FROM import.rc_2015_03 WHERE dat
 
 ![GitHub Logo](6.png)
 
-czas: 9.7min
-
 #wartosc najlepiej ocenianego tematu
 
 komenda: SELECT MAX(data->>'score') FROM import.rc_2015_03;
-
-czas 12.1 min
 
 
 Postgres jest wolniejszy od Mongo, ale absorbuje mniej ram i procesora.
