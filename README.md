@@ -48,6 +48,10 @@ db.reddit.find({},{_id:0, subreddit:1}).sort({"score":-1})limit(1)
 
 czas 17.8min
 
+| mongo | postgres|
+|-------|---------|
+|yyy    | fffffff| tttttt|
+
 #Zachowanie podzespolow
 
 # mongo
