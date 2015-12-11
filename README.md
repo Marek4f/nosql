@@ -44,24 +44,6 @@ db.reddit.find({},{_id:0, subreddit:1}).sort({"score":-1})limit(1)
 ![GitHub Logo](2.png)
 
 
-| mongo | postgres| zadanie|
-|-------|---------|-------|
-| natychmiast    |  21 min | zliczenie rekordow|
-|    14.5min   |  28.3min  |  zliczenie wszystkich autorów zaczynajacych sie na litere m      |
-|       7.3 min  |    9.7min         |      piec pierwszych kontrowersyjnych tematow      |
-|    10.8min         |      12.1      |  wartosc najlepiej ocenianego tematu      |
-
-#Zachowanie podzespolow
-
-# mongo
-![GitHub Logo](8m.png)![GitHub Logo](pr2.png)
-![GitHub Logo](10m.png)
-
-# postgres
-![GitHub Logo](pr1.png)![GitHub Logo](4.png)
-![GitHub Logo](5.png)
-
-Procesor nie ma dużego wplywu na czas operacji. Obciazenie procesora nie przekraczalo 30%, jednak pamiec ram i dysk byly wykorzystywane w 100%.
 
 #Postgres
 
@@ -93,8 +75,25 @@ komenda: SELECT data->>'subreddit' as subreddit FROM import.rc_2015_03 WHERE dat
 
 komenda: SELECT MAX(data->>'score') FROM import.rc_2015_03;
 
+# wnioski
 
-Postgres jest wolniejszy od Mongo, ale absorbuje mniej ram i procesora.
+| mongo | postgres| zadanie|
+|-------|---------|-------|
+| natychmiast    |  21 min | zliczenie rekordow|
+|    14.5min   |  28.3min  |  zliczenie wszystkich autorów zaczynajacych sie na litere m      |
+|       7.3 min  |    9.7min         |      piec pierwszych kontrowersyjnych tematow      |
+|    10.8min         |      12.1      |  wartosc najlepiej ocenianego tematu      |
+
+#Zachowanie podzespolow
+
+# mongo
+![GitHub Logo](8m.png)![GitHub Logo](pr2.png)
+![GitHub Logo](10m.png)
+
+# postgres
+![GitHub Logo](pr1.png)![GitHub Logo](4.png)
+![GitHub Logo](5.png)
+
 
 # GeoJson
 
