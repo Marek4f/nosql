@@ -118,3 +118,25 @@ Wyszukalem 3 najblizsze miejscowosci od Tczewa.
 ![GitHub Logo](m1.png)
 
 [mapa](https://github.com/Marek4f/nosql/blob/master/1.geojson)
+
+# Poligon
+
+te same miejscowoci + Tczew
+
+db.p.find({ loc: {$geoWithin : { $geometry: { type : "Polygon", coordinates: [ [ [ 18.829281, 54.096649 ], [ 18.82991, 54.180191 ], [ 18.69787, 54.173038 ], [ 18.77787, 54.092419 ] ] ] } } }},{_id:0, name:1} )
+
+```
+{ "name": "Pszczolki" }
+{ "name": "Lisewo Malborskie" }
+{ "name": "Tczew" }
+{ "name": "Steblewo" }
+```
+
+[mapa](https://github.com/Marek4f/nosql/blob/master/3.geojson)
+# Line String
+
+Wyswietlenie lini Tczew-Pszczolki
+
+![GitHub Logo](m2.png)
+
+[mapa](https://github.com/Marek4f/nosql/blob/master/2.geojson)
