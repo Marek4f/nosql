@@ -55,7 +55,7 @@ czas 17.8min
 ![GitHub Logo](10m.png)
 
 # postgres
-![GitHub Logo](pr.png)![GitHub Logo](4.png)
+![GitHub Logo](pr1.png)![GitHub Logo](4.png)
 ![GitHub Logo](5.png)
 
 Procesor nie ma dużego wplywu na czas operacji. Obciazenie procesora nie przekraczalo 30%, jednak pamiec ram i dysk byly wykorzystywane w 100%.
