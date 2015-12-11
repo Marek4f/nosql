@@ -25,8 +25,6 @@ db.reddit.count()
 
 54564441
 
-czas: natychmiast
-
 #zliczenie wszystkich autorów zaczynajacych sie na litere m
 
 komenda: db.reddit.find({author: /^m/}).count()
@@ -94,7 +92,7 @@ Zachowanie podzespolow
 ![GitHub Logo](pr1.png)![GitHub Logo](4.png)
 ![GitHub Logo](5.png)
 
-Mongo jest szybsze od postgres, jednak na Windows podczas dluzszego wyszukiwania zabiera 100% ramu. Z Postgres tego problemu nie ma. Udzial procesora nie gra duzej roli. Podstawa to dysk i w przypadku Mongo pamiec RAM. Przy pierwszych podejsciach przeszkadza w Mongo nieintuicyjna konstrukcja polecen, jednak po czasie okazuja sie byc prostsze od postgres. Mongo lepiej radzi sobie z duzymi bazami danych. Jest szybsze.
+Mongo jest szybsze od postgres, jednak na Windows podczas dluzszego wyszukiwania zabiera 100% ramu. Z Postgres tego problemu nie ma. Udzial procesora nie gra duzej roli. Podstawa to dysk i w przypadku Mongo pamiec RAM. Przy pierwszych podejsciach przeszkadza w Mongo nieintuicyjna konstrukcja polecen, jednak po czasie okazuja sie byc prostsze od postgres. Mongo lepiej radzi sobie z duzymi bazami danych. 
 
 # GeoJson
 
