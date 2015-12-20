@@ -128,11 +128,11 @@ db.p.find({ loc: {$geoWithin : { $geometry: { type : "Polygon", coordinates: [ [
 { "name": "Czatkowy" }
 ```
 
-[mapa](https://github.com/Marek4f/nosql/blob/master/3.geojson)
+[mapa](https://github.com/Marek4f/nosql/blob/master/4.geojson)
 # Line String
 
 Wyswietlenie lini Tczew-Pszczolki
 
 ![GitHub Logo](m2.png)
 
-[mapa](https://github.com/Marek4f/nosql/blob/master/4.geojson)
+[mapa](https://github.com/Marek4f/nosql/blob/master/2.geojson)
