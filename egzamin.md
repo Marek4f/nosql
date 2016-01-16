@@ -33,4 +33,7 @@ Wyswietlenie restauracji majacych dlugosc nazwy serwowanego jedzenia dluzsza niz
 
 fot
 
+Wyswietlenie adresow url restauracji serwujacych pizze i majace maksymalna ocene
+
+fot
 
