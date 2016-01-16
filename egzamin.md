@@ -37,3 +37,10 @@ Wyswietlenie adresow url restauracji serwujacych pizze i majace maksymalna ocene
 
 fot
 
+Wyswietlenie 3 najczesciej dawanych ocen za pomoca grupowania
+
+fot
+
+Wyswietlenie 3 najczestrzych lokacji
+
+fot
