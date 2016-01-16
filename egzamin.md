@@ -10,6 +10,9 @@ fot
 #sortowanie
 
 Wyswietlenie 5 restauracji zaczynajacych sie na "A" wyswietlajac od najgorszej oceny
+
 fot
+
 Wyswietlenie 5 restauracji serwujacych pizze w Londynie
+
 fot
