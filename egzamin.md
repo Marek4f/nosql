@@ -27,5 +27,10 @@ wyswietlenie srednich ocen dla restauracji
 
 fot
 
-Javascript
+#Javascript
+
+Wyswietlenie restauracji majacych dlugosc nazwy serwowanego jedzenia dluzsza niz 3 znaki
+
+fot
+
 
