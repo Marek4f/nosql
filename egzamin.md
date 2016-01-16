@@ -17,6 +17,15 @@ Wyswietlenie 5 restauracji serwujacych pizze w Londynie
 
 fot
 
+#agregacje
+
 Wyswietlenie 15 najczesciej powtarzajacych sie nazw restauracji
 
 fot
+
+wyswietlenie srednich ocen dla restauracji
+
+fot
+
+Javascript
+
