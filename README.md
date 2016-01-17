@@ -7,6 +7,4 @@ Rozwiązania zadań z przedmiotu *Bazy NoSQL*:
  - [X] EDA
 1. [Egzamin](egzamin.md)
  - [ ] Aggregation Pipeline
- - [ ] MapReduce
-
 
