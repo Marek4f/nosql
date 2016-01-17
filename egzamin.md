@@ -1,5 +1,15 @@
 #Marek Eggert
 
+Specyfikacja komputera
+
+System: Windows 10 64bit
+
+procesor: i7 4800MQ 2.70ghz
+
+RAM: 16GB
+
+Dysk: wd10jpvx-75 scsi, Cache: 8mb, Rotation Speed: 5400 RPM, Model: Blue
+
 Zaimportowalem baze restauracji poleceniem 
 mongoimport --db bazka --collection res --drop --file res.json
 Zostala zaimportowana natychmiast. Poleceniem
